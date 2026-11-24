@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VIC Technology — Haz crecer y automatiza tu negocio</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 108'%3E%3Cpolygon points='50,4 92,28 92,80 50,104 8,80 8,28' fill='%231a2b4c' stroke='%2300b4d8' stroke-width='7'/%3E%3Cpath d='M25 36 L37 72 L47 72 L59 36 L50 36 L42 61 L34 36 Z M48 45 L77 45 L74 52 L64 52 L56 77 L47 77 L55 52 L45 52 Z' fill='%23ffffff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -76,9 +77,9 @@
     background:rgba(26,43,76,0.96);
     border-bottom:1px solid rgba(255,255,255,0.12);
   }
-  .nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:16px 32px; max-width:var(--max); margin:0 auto; }
-  .logo{ font-family:'Zilla Slab', serif; font-weight:700; font-size:1.35rem; color:var(--paper); display:flex; align-items:center; gap:8px; }
-  .logo .dot{ width:10px; height:10px; background:var(--clay); }
+  .nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:14px 32px; max-width:var(--max); margin:0 auto; }
+  .logo{ font-family:'Zilla Slab', serif; font-weight:700; font-size:1.35rem; color:var(--paper); display:inline-flex; align-items:center; gap:11px; }
+  .logo-mark{ width:36px; height:38px; flex-shrink:0; display:block; }
   .nav-links{ display:flex; gap:32px; font-size:0.94rem; font-weight:500; color:rgba(255,255,255,0.85); }
   .nav-links a{ border-bottom:1px solid transparent; padding-bottom:2px; transition:color .15s, border-color .15s; }
   .nav-links a:hover{ color:var(--paper); border-color:var(--clay); }
@@ -222,7 +223,18 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="#" class="logo"><span class="dot"></span>VIC Technology</a>
+    <a href="#" class="logo" aria-label="VIC Technology Inicio">
+      <svg class="logo-mark" viewBox="0 0 100 108" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="50,4 92,28 92,80 50,104 8,80 8,28" fill="#0e2745" stroke="#00b4d8" stroke-width="6.5" stroke-linejoin="round"/>
+        <polygon points="50,12 85,32 85,76 50,96 15,76 15,32" stroke="#4a90e2" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="6 4"/>
+        <circle cx="50" cy="12" r="2" fill="#00b4d8"/>
+        <circle cx="85" cy="54" r="2" fill="#00b4d8"/>
+        <circle cx="15" cy="54" r="2" fill="#00b4d8"/>
+        <path d="M23 36 L36 73 L46 73 L59 36 L49.5 36 L41 61.5 L32.5 36 Z" fill="#ffffff"/>
+        <path d="M48 45 L79 45 L76 52.5 L65.5 52.5 L57 79 L47.5 79 L56 52.5 L45 52.5 Z" fill="#00b4d8"/>
+      </svg>
+      <span>VIC Technology</span>
+    </a>
     <nav class="nav-links">
       <a href="#que-hacemos">Qué hacemos</a>
       <a href="#soluciones">Soluciones</a>
@@ -452,7 +464,15 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#" class="logo" style="color:var(--paper);"><span class="dot"></span>VIC Technology</a>
+        <a href="#" class="logo" style="color:var(--paper);" aria-label="VIC Technology Inicio">
+          <svg class="logo-mark" viewBox="0 0 100 108" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="50,4 92,28 92,80 50,104 8,80 8,28" fill="#0e2745" stroke="#00b4d8" stroke-width="6.5" stroke-linejoin="round"/>
+            <polygon points="50,12 85,32 85,76 50,96 15,76 15,32" stroke="#4a90e2" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="6 4"/>
+            <path d="M23 36 L36 73 L46 73 L59 36 L49.5 36 L41 61.5 L32.5 36 Z" fill="#ffffff"/>
+            <path d="M48 45 L79 45 L76 52.5 L65.5 52.5 L57 79 L47.5 79 L56 52.5 L45 52.5 Z" fill="#00b4d8"/>
+          </svg>
+          <span>VIC Technology</span>
+        </a>
         <p>Herramientas digitales, automatización y respaldo tecnológico para negocios que quieren crecer.</p>
       </div>
       <div class="footer-col">
